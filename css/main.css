@@ -1,0 +1,271 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  background-color: #F4F7F7; /*grey*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #104455;
+}
+
+a, a:hover, a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 250px;
+  min-width: 250px;
+
+  margin: 0;
+  /*padding: 15px;*/
+  padding: 0;
+
+  overflow: hidden;
+  background-color: #FFFFFF; /*white*/
+  box-shadow: 0 4px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+i {
+  margin: 7px;
+  min-width: 14px;
+}
+
+.sidebar__profil {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+
+  background-image: url(http://fakeimg.pl/250x150/);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150%;
+}
+
+.name {
+  font-size: 1.3rem;
+  color: #FFFFFF; /*bluegrey500*/
+  font-weight: 500;
+  margin: 0;
+  line-height: 40px;
+	outline: 0;
+  vertical-align: baseline;
+}
+
+.name__container {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  text-align: center;
+  background-color: rgba(2, 136, 209, 0.8);
+}
+
+.sidebar__bio {
+  position: relative;
+  margin: 0;
+  padding: 5px 20px;
+}
+
+.bio-container {
+  margin: 0;
+  border-left: 2px dashed rgba(2, 136, 209, 0.8);
+}
+
+.bio {
+  margin: 60px 20px;
+}
+
+.sidebar__contact {
+  position: absolute;
+  width: 100%;
+  height: 75px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact {
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  padding: 10px 5%;
+  /*text-align: center;*/
+  border-top: 1px solid #E0E0E0;
+  color: rgba(2, 136, 209, 1);
+  font-size: 14px;
+}
+.contact:hover {
+  background-color: rgba(2, 136, 209, 1);
+  color: white;
+}
+
+.main {
+	width: auto;
+  height: 100%;
+  margin: 0 0 0 250px;
+  padding: 20px 30px;
+}
+@media screen and (max-width: 1584px) {
+  .main { padding: 10px; }
+}
+
+.title {
+  color: rgb(2, 136, 209);
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.video-container {
+  margin: 30px 0 0;
+  width: auto;
+  height: auto;
+}
+
+.video {
+  position: relative;
+  display: inline-block;
+
+  width: 47%;
+  min-width: 600px;
+  max-width: 757px;
+  height: 250px;
+
+  margin: 0 2% 2% 0;
+
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+@media screen and (max-width: 1542px) {
+  .video {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+}
+
+.video:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.video-pic {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  max-width: 250px;
+  height: 100%;
+}
+
+.video-infos {
+  position: absolute;
+  display: inline-block;
+
+  width: auto;
+  height: 100%;
+
+  margin: 0;
+  padding: 0 15px;
+}
+
+.video-header {
+  position: relative;
+  height: 40px;
+
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.video-title {
+  line-height: 40px;
+  margin: 0;
+}
+
+.video-describe {
+  padding: 15px 0;
+}
+
+.bouton-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: auto;
+  height: auto;
+  padding: 15px;
+}
+
+.button {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  width: auto;
+  height: auto;
+  padding: 5px 10px 5px 5px;
+  margin: 0;
+  cursor: pointer;
+}
+.button-download {
+  background-color: transparent;
+  border: 1px solid rgb(2, 136, 209);
+  color: rgb(2, 136, 209);
+}
+.button-download:hover {
+  background-color: rgb(2, 136, 209);
+  border: white;
+  color: white;
+}
+.button-watch {
+  background-color: rgb(2, 136, 209);
+  border: 1px solid rgb(2, 136, 209);
+  color: white;
+}
+.button-watch:hover {
+  background-color: white;
+  border: 1px solid rgb(2, 136, 209);
+  color: rgb(2, 136, 209);
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    margin: 1% auto;
+    /*padding: 20px;*/
+    border: 1px solid #888;
+    width: 90%;
+}
