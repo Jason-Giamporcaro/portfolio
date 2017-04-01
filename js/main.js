@@ -29,7 +29,7 @@
    function loadVideo(video) {
      modal.style.display = "block";
      resizeVideo(playerContainer.offsetWidth)
-     player.src = "videos/"+video;
+     player.src = "http://jonathan-giamporcaro.com/videos/"+video+".mp4";
    }
 
    window.onclick = function(event) {

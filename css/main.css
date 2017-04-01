@@ -89,7 +89,8 @@ i {
 }
 
 .bio {
-  margin: 60px 20px;
+  margin: 20px;
+  font-size: 0.9rem
 }
 
 .sidebar__contact {
@@ -130,9 +131,6 @@ i {
   margin: 0 0 0 250px;
   padding: 20px 30px;
 }
-@media screen and (max-width: 1584px) {
-  .main { padding: 10px; }
-}
 
 .title {
   color: rgb(2, 136, 209);
@@ -151,7 +149,6 @@ i {
 
   width: 47%;
   min-width: 600px;
-  max-width: 757px;
   height: 250px;
 
   margin: 0 2% 2% 0;
@@ -160,12 +157,9 @@ i {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
-@media screen and (max-width: 1542px) {
-  .video {
-    width: 100%;
-    margin-bottom: 2%;
-  }
-}
+/*@media screen and (max-width: 1542px) {
+
+}*/
 
 .video:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -200,6 +194,7 @@ i {
 .video-title {
   line-height: 40px;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .video-describe {
@@ -245,6 +240,14 @@ i {
   background-color: white;
   border: 1px solid rgb(2, 136, 209);
   color: rgb(2, 136, 209);
+}
+
+@media screen and (max-width: 1650px) {
+  .main { padding: 10px; }
+  .video {
+    width: 100%;
+    margin-bottom: 2%;
+  }
 }
 
 
