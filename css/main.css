@@ -49,10 +49,9 @@ i {
   text-align: center;
 
 
-  background-image: url(http://fakeimg.pl/250x150/);
+  background-image: url(../images/photodeprofiljason.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 150%;
 }
 
 .name {
@@ -243,7 +242,7 @@ i {
 }
 
 @media screen and (max-width: 1650px) {
-  .main { padding: 10px; }
+  /*.main { padding: 10px; }*/
   .video {
     width: 100%;
     margin-bottom: 2%;
